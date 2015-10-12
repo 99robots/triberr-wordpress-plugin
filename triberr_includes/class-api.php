@@ -13,12 +13,14 @@
  * @return void
  */
 function triberr_submit_post($post_ID) {
+
 	$thisPost = get_post($post_ID, ARRAY_A);
-			if(get_permalink( $post_ID ) != NULL) {
-				$triberrFields = triberr_build_url($post_ID);
-				$url = 'http://triberr.com/subdomains/api/';
-				$triberrMSG = triberr_connect($url, $triberrFields);
-			}
+
+	if ( get_permalink( $post_ID ) != NULL ) {
+		$triberrFields = triberr_build_url($post_ID);
+		$url = 'http://triberr.com/subdomains/api/';
+		$triberrMSG = triberr_connect($url, $triberrFields);
+	}
 
 	update_option('triberr_message', $triberrMSG);
 }
@@ -31,27 +33,29 @@ function triberr_submit_post($post_ID) {
  * @return void
  */
 function triberr_build_url($post_ID) {
-	$thisPost = get_post($post_ID, ARRAY_A);
 
+	$thisPost = get_post($post_ID, ARRAY_A);
 	$triberr_id = get_post_meta($post_ID, '_triberr_id', true);
-	if($triberr_id == ""){
+
+	if ( $triberr_id == "" ){
 		$triberr_id = "empty";
 	}
 
 	$fields = array(
-		'act'=>urlencode("add"),
-		'key'=>urlencode(get_option('triberr_apikey')),
-		'url'=>urlencode(get_permalink(  $thisPost['ID'] )),
-		'title'=>urlencode($thisPost['post_title']),
-		'body'=>urlencode(apply_filters('the_content',$thisPost['post_content'])),
-		'status'=>urlencode($thisPost['post_status']),
-		'guid'=>urlencode($thisPost['guid']),
-		'post_date'=>urlencode($thisPost['post_date']),
-		'post_id'=>urlencode( $thisPost['ID']),
-		'post_type'=>urlencode($thisPost['post_type']),
-		'triberr_id'=>$triberr_id,
-		'plugin_version'=>urlencode($GLOBALS['version_number']),
-		);
+		'act'             => urlencode("add"),
+		'key'             => urlencode(get_option('triberr_apikey')),
+		'url'             => urlencode(get_permalink(  $thisPost['ID'] )),
+		'title'           => urlencode($thisPost['post_title']),
+		'body'            => urlencode(apply_filters('the_content',$thisPost['post_content'])),
+		'status'          => urlencode($thisPost['post_status']),
+		'guid'            => urlencode($thisPost['guid']),
+		'post_date'       => urlencode($thisPost['post_date']),
+		'post_id'         => urlencode( $thisPost['ID']),
+		'post_type'       => urlencode($thisPost['post_type']),
+		'triberr_id'      => $triberr_id,
+		'plugin_version'  => urlencode($GLOBALS['version_number']),
+	);
+
 	return $fields;
 }
 
@@ -66,7 +70,11 @@ function triberr_build_url($post_ID) {
 function triberr_connect($url, $fields) {
 
 		//url-ify the data for the POST
-		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
+
+		foreach($fields as $key=>$value) {
+			$fields_string .= $key.'='.$value.'&';
+		}
+
 		rtrim($fields_string,'&');
 
 		//open connection

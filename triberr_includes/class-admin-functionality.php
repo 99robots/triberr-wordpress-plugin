@@ -27,7 +27,8 @@ function triberr_admin_setup_notices() {
  * @return void
  */
 function triberr_display_message() {
-	if(get_option('triberr_message')) {
+
+	if ( get_option('triberr_message') ) {
 		echo '<div id="message" class="updated"><p>'.get_option('triberr_message').'</p></div>';
 		update_option('triberr_message', '');
 	}
