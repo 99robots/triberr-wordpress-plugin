@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
 Plugin Name: Triberr
 Plugin URI: http://triberr.com/subdomains/plugins/wordpress/
 Description: Instantly send posts from your blog from Triberr.
@@ -19,10 +19,9 @@ require_once('triberr_includes/class-api.php');
 add_action ('publish_post', 'triberr_submit_post');
 add_action ('publish_future_post', 'triberr_submit_post');
 
-// Check of the plugin has been configured, if not show message 
+// Check of the plugin has been configured, if not show message
 add_action ('admin_notices','triberr_admin_setup_notices');
 add_action ('admin_footer', 'triberr_display_message');
 
 // Create the sidebar link
-add_action('admin_menu', 'triberr_menu'); 
-?>
+add_action('admin_menu', 'triberr_menu');

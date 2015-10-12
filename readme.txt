@@ -1,17 +1,17 @@
-=== Plugin Name ===
-Contributors: Dan Cristo, Andres Hernandez, Dino Dogan
+=== Triberr for WordPress ===
+Contributors: Dan Cristo, Andres Hernandez, Dino Dogan, 99robots
 Tags: triberr, twitter, remote publishing, blogging, guest post, guest posting, blog syndication, comment system, reBlog, social media, guest post
-Requires at least: 3.0.0
-Tested up to: 4.0.0
+Requires at least: 4.0.0
+Tested up to: 4.3.1
 Stable tag: 4.0.0
 
 What does Triberr Plugin do?
 
-Sends your post immediately to Triberr without needing to crawl your RSS feed. 
+Sends your post immediately to Triberr without needing to crawl your RSS feed.
 Allows tribemates to view your post in their Tribal Stream thereby saving them time and increasing the likelihood of them sharing your post.
 Allows you to send and receive guest posts to your blog through Triberr (reBlog/syndication function)
-Pulls Bio/pic/social information from your Triberr profile and ensures every reBlog has proper attribution. 
-Installs a unified view of all comments made across every instance of syndicated content. 
+Pulls Bio/pic/social information from your Triberr profile and ensures every reBlog has proper attribution.
+Installs a unified view of all comments made across every instance of syndicated content.
 Displays Tribal Stream in Wordpress Dashboard
 
 == Description ==
@@ -39,7 +39,7 @@ Right now all posts go to Triberr, but you can delete them from you Sent Stream.
 
 = If I make a change to a post, will Triberr import it again?
 
-Triberr will check to see if we already know about the post in our database. If so, we will not import it again. 
+Triberr will check to see if we already know about the post in our database. If so, we will not import it again.
 
 = Can I also import older posts into Triberr using this plugin?
 
@@ -47,11 +47,12 @@ No, Triberr will only accept posts published within the last week.
 
 = If my post gets syndicated to other blogs, will I get the credit.
 
-Yes. Every reBlog results in the Author info pulled along with the content, so regardless of where your post is published you will be prominently featured as the Author. 
+Yes. Every reBlog results in the Author info pulled along with the content, so regardless of where your post is published you will be prominently featured as the Author.
 
 == Screenshots ==
 
 == Changelog ==
+
 = 4.0.0 =
 Improved plugin performance reducing plugin load time contribution from 75% to under 1%
 Removed Triberr comment system
@@ -78,8 +79,8 @@ Saved the Triberr ID to the Wordpress Meta Data
 = 2.0.1 =
 Fixed a function conflict that crashed the plugin
 
-= 2.0 =
+= 2.0.0 =
 Triberr Global Comment System
 
-= 1.0 =
+= 1.0.0 =
 Beta release
