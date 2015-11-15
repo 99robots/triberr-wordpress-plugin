@@ -1,30 +1,30 @@
 === Triberr ===
 Contributors: Triberr, 99robots
-Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social
-Requires at least: 4.0.1
+Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social, influencer, auto post, auto publish, auto tweet, twitter post, best twitter plugin, best social plugin, best sharing plugin, social plugin, buffer, facebook share, twitter share, linkedin share, post to twitter, post to facebook, post to linkedin,
+promote old posts, Promote Posts, schedule, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
+Requires at least: 4.0.0
 Tested up to: 4.3.1
-Stable tag: 4.0.0
+Stable tag: 4.0.2
 
-The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage greater sharing by tribemates. Get your articles into the Tribal stream for maximum exposure.  
+The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
 
 == Description ==
 
-This is an all-in-one plugin for members of Triberr.com. The plugin is meant to seamlessly integrate your blog with Triberr so that it can send your posts. 
-
+This is an all-in-one plugin for members of Triberr.com - the largest influencer platform. Get more shares by connecting your Triberr account to your WordPress site to automatically share your posts.
 
 ### Main Features:
 > * Sends your post immediately to Triberr without needing to crawl your RSS feed.
-> * Allows tribemates to view your post in their Tribal Stream thereby saving them time and increasing the likelihood of them sharing your post.
-> * Pulls bio / pic / social information from your Triberr profile and ensures every reBlog has proper attribution. 
-> * Displays Tribal Stream in Wordpress Dashboard
+> * Allows tribemates to view your post in their Tribal Stream thereby saving time and increasing the likelihood of them sharing your post.
+> * Displays Tribal Stream in the Wordpress Dashboard
 
 ### Useful Links:
-> * [Triberr Website](http://triberr.com) 
-> * [Triberr Help Documentation](http://help.triberr.com) 
-> * [Triberr Blog](http://blog.triberr.com) 
+> * [How to Configure Triberr WordPress Plugin](http://help.triberr.com/how-to-configure-the-triberr-wordpress-plugin/)
+> * [Triberr Website](http://triberr.com)
+> * [Triberr Help Documentation](http://help.triberr.com)
+> * [Triberr Blog](http://blog.triberr.com)
 
 ### Support:
-Please `use` [Triberr Support](mailto:someone@example.com?Subject=Triberr%20WordPress%20Plugin) for your questions and support requests!
+Please `use` [Triberr Support](mailto:support@triberr.com?Subject=Triberr%20WordPress%20Plugin%20Question%20from%20WP.org) for your questions and support requests!
 
 == Installation ==
 
@@ -44,22 +44,21 @@ Right now, all posts go to Triberr, but you can delete them from you Sent Stream
 
 = If I make a change to a post, will Triberr import it again?
 
-Triberr will check to see if we already know about the post in our database. If so, we will not import it again. 
+Triberr will check to see if we already know about the post in our database. If so, we will not import it again.
 
 = Can I also import older posts into Triberr using this plugin?
 
 No, Triberr will only accept posts published within the last week.
 
-= If my post gets syndicated to other blogs, will I get the credit.
-
-Yes. Every reBlog results in the Author info pulled along with the content, so regardless of where your post is published you will be prominently featured as the Author. 
-
 == Screenshots ==
+
+1. Settings Page for API Token
 
 == Changelog ==
 
-= 4.0.1 = 2015-11-15
-* ADDED: Banner and Icons
+= 4.0.2 = 2015-11-15
+* ADDED: Settings link on plugins page
+* UPDATED: Readme
 
 = 4.0.0 = 2015-11-15
 * IMPROVED: plugin performance reducing plugin load time contribution from 75% to under 1%

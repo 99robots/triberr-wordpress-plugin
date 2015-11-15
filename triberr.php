@@ -3,13 +3,13 @@
 Plugin Name: Triberr
 Plugin URI: http://triberr.com/subdomains/plugins/wordpress/
 Description: Instantly send posts from your blog from Triberr.
-Version: 4.0.1
+Version: 4.0.2
 Author: Triberr
 Author URI: http://Triberr.com/
 License: GPL2
 */
 
-$GLOBALS['version_number'] = "4.0.1";
+$GLOBALS['version_number'] = "4.0.2";
 require_once('triberr_includes/class-admin-functionality.php');
 
 // Include calls for xml-rpc
@@ -25,3 +25,18 @@ add_action ('admin_footer', 'triberr_display_message');
 
 // Create the sidebar link
 add_action('admin_menu', 'triberr_menu');
+
+/**
+ * Add the setting page as a link on the all plugins page
+ *
+ * @access public
+ * @param mixed $links
+ * @return void
+ */
+function triberr_action_links ( $links ) {
+
+	$mylinks = array('<a href="' . admin_url( 'options-general.php?page=triberr-options' ) . '">' . __('Settings', 'triberr') . '</a>');
+
+ 	return array_merge( $links, $mylinks );
+}
+add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'triberr_action_links' );
