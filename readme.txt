@@ -1,7 +1,7 @@
 === Triberr ===
 Contributors: Triberr, 99robots
 Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social
-Requires at least: 3.0.0
+Requires at least: 4.0.0
 Tested up to: 4.3.1
 Stable tag: 4.0.0
 
@@ -58,10 +58,10 @@ Yes. Every reBlog results in the Author info pulled along with the content, so r
 
 == Changelog ==
 
-= 4.0.0 =
-Improved plugin performance reducing plugin load time contribution from 75% to under 1%
-Removed Triberr comment system
-Removed reblogging functionality
+= 4.0.0 = 2015-11-15
+* IMPROVED: plugin performance reducing plugin load time contribution from 75% to under 1%
+* REMOVED: Triberr comment system
+* REMOVED: Reblogging functionality
 
 = 3.0.1 =
 Fixed an issue where other commenting systems were not showing
