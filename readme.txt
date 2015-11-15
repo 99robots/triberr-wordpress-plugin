@@ -1,7 +1,7 @@
 === Triberr ===
 Contributors: Triberr, 99robots
 Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social
-Requires at least: 4.0.0
+Requires at least: 4.0.1
 Tested up to: 4.3.1
 Stable tag: 4.0.0
 
@@ -57,6 +57,9 @@ Yes. Every reBlog results in the Author info pulled along with the content, so r
 == Screenshots ==
 
 == Changelog ==
+
+= 4.0.1 = 2015-11-15
+* ADDED: Banner and Icons
 
 = 4.0.0 = 2015-11-15
 * IMPROVED: plugin performance reducing plugin load time contribution from 75% to under 1%

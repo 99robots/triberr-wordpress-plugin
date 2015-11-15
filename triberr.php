@@ -3,13 +3,13 @@
 Plugin Name: Triberr
 Plugin URI: http://triberr.com/subdomains/plugins/wordpress/
 Description: Instantly send posts from your blog from Triberr.
-Version: 4.0.0
+Version: 4.0.1
 Author: Triberr
 Author URI: http://Triberr.com/
 License: GPL2
 */
 
-$GLOBALS['version_number'] = "4.0.0";
+$GLOBALS['version_number'] = "4.0.1";
 require_once('triberr_includes/class-admin-functionality.php');
 
 // Include calls for xml-rpc
