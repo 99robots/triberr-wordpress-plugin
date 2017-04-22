@@ -56,6 +56,10 @@ No, Triberr will only accept posts published within the last week.
 
 == Changelog ==
 
+= 4.0.4 = 2017-04-23
+* UPDATED: Support for https
+* UPDATED: Readme
+
 = 4.0.3 = 2016-08-19
 * FIXED: Error notification message would cause post not to be picked up by Triberr
 * UPDATED: Readme
