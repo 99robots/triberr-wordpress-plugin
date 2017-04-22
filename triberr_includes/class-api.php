@@ -69,8 +69,10 @@ function triberr_build_url($post_ID) {
  */
 function triberr_connect($url, $fields) {
 
-		//url-ify the data for the POST
+		// set up our fields string variable
+		$fields_string = '';
 
+		//url-ify the data for the POST
 		foreach($fields as $key=>$value) {
 			$fields_string .= $key.'='.$value.'&';
 		}
