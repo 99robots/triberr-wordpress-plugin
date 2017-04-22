@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Triberr
-Plugin URI: http://triberr.com/subdomains/plugins/wordpress/
+Plugin URI: https://triberr.com/subdomains/plugins/wordpress/
 Description: Instantly send posts from your blog from Triberr.
 Version: 4.0.2
 Author: Triberr
-Author URI: http://Triberr.com/
+Author URI: https://Triberr.com/
 License: GPL2
 */
 

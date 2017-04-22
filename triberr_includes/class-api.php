@@ -18,7 +18,7 @@ function triberr_submit_post($post_ID) {
 
 	if ( get_permalink( $post_ID ) != NULL ) {
 		$triberrFields = triberr_build_url($post_ID);
-		$url = 'http://triberr.com/subdomains/api/';
+		$url = 'https://triberr.com/subdomains/api/';
 		$triberrMSG = triberr_connect($url, $triberrFields);
 	}
 
@@ -85,6 +85,7 @@ function triberr_connect($url, $fields) {
 		curl_setopt($ch, CURLOPT_POST,count($fields));
 		curl_setopt($ch, CURLOPT_POSTFIELDS,$fields_string);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false );
 		curl_setopt($ch, CURLOPT_TIMEOUT, 10);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 

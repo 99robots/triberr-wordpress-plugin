@@ -64,7 +64,7 @@ function triberr_options_page() {
 	<div class="wrap">
 	    <div class="top_nav">
 	        <div class="plugin_logo">
-	            <img src="http://triberr.com/assets/misc/logoLight.png" />
+	            <img src="https://triberr.com/assets/misc/logoLight.png" />
 	        </div>
 		</div>
 
