@@ -13,6 +13,43 @@
  */
 function triberr_admin_setup_notices() {
 
+	// Adding notice to user for updating the plugin to the latest version
+	// set the arguments to get latest info from repository via API ##
+	$args = array(
+		'slug' => 'triberr-wordpress-plugin',
+		'fields' => array(
+			'version' => true,
+		)
+	);
+
+	/** Prepare our query */
+	$call_api = plugins_api( 'plugin_information', $args );
+
+	/** Check for Errors & Display the results */
+	if ( is_wp_error( $call_api ) ) {
+
+		$api_error = $call_api->get_error_message();
+
+	} else {
+
+		//echo $call_api; // everything ##
+
+		if ( ! empty( $call_api->version ) ) {
+
+			$version_latest = $call_api->version;
+
+		}
+
+	}
+	global $pagenow;
+	if($pagenow != "plugins.php" && $version_latest != $GLOBALS['version_number']) {
+    ?>
+		<div class="update-nag notice">
+			<p><a href="<?php echo admin_url( 'plugins.php' ); ?>">Update Triberr Plugin to the latest version!</a></p>
+		</div>
+    <?php
+	}
+
     $PINGKEY = get_option('triberr_apikey');
 
 	if($PINGKEY == ""){
