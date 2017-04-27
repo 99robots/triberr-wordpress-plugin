@@ -15,7 +15,7 @@ function triberr_admin_setup_notices() {
 
 	// Adding notice to user for updating the plugin to the latest version
 	// set the arguments to get latest info from repository via API ##
-	$args = array(
+	/*$args = array(
 		'slug' => 'triberr-wordpress-plugin',
 		'fields' => array(
 			'version' => true,
@@ -23,10 +23,10 @@ function triberr_admin_setup_notices() {
 	);
 
 	/** Prepare our query */
-	$call_api = plugins_api( 'plugin_information', $args );
+	//$call_api = plugins_api( 'plugin_information', $args );
 
 	/** Check for Errors & Display the results */
-	if ( is_wp_error( $call_api ) ) {
+	/*if ( is_wp_error( $call_api ) ) {
 
 		$api_error = $call_api->get_error_message();
 
@@ -48,8 +48,30 @@ function triberr_admin_setup_notices() {
 			<p><a href="<?php echo admin_url( 'plugins.php' ); ?>">Update Triberr Plugin to the latest version!</a></p>
 		</div>
     <?php
+	}*/
+	
+	// Adding notice to user for updating the plugin to the latest version
+	$args = (object) array( 'slug' => 'triberr-wordpress-plugin' );
+ 
+    $request = array( 'action' => 'plugin_information', 'timeout' => 15, 'request' => serialize( $args) );
+ 
+    $url = 'http://api.wordpress.org/plugins/info/1.0/';
+ 
+    $response = wp_remote_post( $url, array( 'body' => $request ) );
+ 
+    $plugin_info = unserialize( $response['body'] );
+ 
+    $version_latest =  $plugin_info->version;
+	
+	global $pagenow;
+	if($pagenow != "plugins.php" && $version_latest > $GLOBALS['version_number']) {
+    ?>
+		<div class="update-nag notice">
+			<p><a href="<?php echo admin_url( 'plugins.php' ); ?>">Update Triberr Plugin to the latest version!</a></p>
+		</div>
+    <?php
 	}
-
+	
     $PINGKEY = get_option('triberr_apikey');
 
 	if($PINGKEY == ""){

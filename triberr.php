@@ -15,9 +15,10 @@ require_once('triberr_includes/class-admin-functionality.php');
 // Include calls for xml-rpc
 require_once('triberr_includes/class-api.php');
 
-if ( ! function_exists( 'plugins_api' ) ) {
+// Function call plugins_api was used to get latest plugin version from WP in class-admin-functionality.php, now using an alternative method.
+/*if ( ! function_exists( 'plugins_api' ) ) {
       require_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-}
+}*/
 
 // Listen for RPC's
 add_action ('publish_post', 'triberr_submit_post');
