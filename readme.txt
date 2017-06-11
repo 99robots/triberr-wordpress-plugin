@@ -3,8 +3,8 @@ Contributors: Triberr, 99robots
 Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social, influencer, auto post, auto publish, auto tweet, twitter post, best twitter plugin, best social plugin, best sharing plugin, social plugin, buffer, facebook share, twitter share, linkedin share, post to twitter, post to facebook, post to linkedin,
 promote old posts, Promote Posts, schedule, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
 Requires at least: 4.0.0
-Tested up to: 4.7.4
-Stable tag: 4.0.6
+Tested up to: 4.8.0
+Stable tag: 4.0.7
 
 The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
 
@@ -55,6 +55,9 @@ No, Triberr will only accept posts published within the last week.
 1. Settings Page for API Token
 
 == Changelog ==
+
+= 4.0.7 = 2017-06-11
+* Made compatible with WordPress 4.8 
 
 = 4.0.6 = 2017-04-27
 * FIXED: Fatal error on WordPress Dashboard introduced in the last version update.

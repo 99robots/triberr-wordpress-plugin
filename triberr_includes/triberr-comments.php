@@ -2,21 +2,22 @@
 .triberr_comment_system {
 	margin: 10px 0 0 0;
 	text-align: center;
-	width:100%;	
+	width:100%;
 }
 </style>
 <?PHP
-			//global $post;
-			$triberr_id = get_post_meta($post->ID, '_triberr_id', true);
-			$url = get_permalink( $post->ID );
-			$triberr_comments_bg_color = get_option('triberr_comments_bg_color');
-			// Strip out the # in case it's in there
-			$triberr_comments_bg_color = str_replace('#','',$triberr_comments_bg_color);
-			
-            $triberr_comments_status = get_option('triberr_comments_status');
-            $triberr_comments_width = get_option('triberr_comments_width');
-			
-		$triberr_comments="
+
+//global $post;
+$triberr_id = get_post_meta( $post->ID, '_triberr_id', true );
+$url = get_permalink( $post->ID );
+$triberr_comments_bg_color = get_option( 'triberr_comments_bg_color' );
+// Strip out the # in case it's in there
+$triberr_comments_bg_color = str_replace( '#', '', $triberr_comments_bg_color );
+
+$triberr_comments_status = get_option( 'triberr_comments_status' );
+$triberr_comments_width = get_option( 'triberr_comments_width' );
+
+		$triberr_comments = "
         <script type=\"text/javascript\">
   function resizeCommentsIframe(id, other_domain) {
     var iframe = document.getElementById(id);
@@ -33,11 +34,9 @@
 </iframe>
 </div>
         ";
-			if(($triberr_comments_status == "yes" || $triberr_comments_status == "on") && $triberr_id != ""){ 
-			echo $triberr_comments;
-			} else {
-			echo "<!-- triberr_comments_status: $triberr_comments_status and triberr_id: $triberr_id -->";	
-			}
-			
-?>
 
+if ( ( 'yes' === $triberr_comments_status || 'on' === $triberr_comments_status ) && '' !== $triberr_id ) {
+	echo $triberr_comments;
+} else {
+	echo "<!-- triberr_comments_status: $triberr_comments_status and triberr_id: $triberr_id -->";
+}
