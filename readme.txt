@@ -1,9 +1,9 @@
 === Triberr ===
-Contributors: Triberr, 99robots
+Contributors: Triberr, 99robots, charliepatel
 Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging, guest post, guest posting, blog syndication, reBlog, social media, guest post, share, sharing, social media, social, influencer, auto post, auto publish, auto tweet, twitter post, best twitter plugin, best social plugin, best sharing plugin, social plugin, buffer, facebook share, twitter share, linkedin share, post to twitter, post to facebook, post to linkedin,
 promote old posts, Promote Posts, schedule, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
 Requires at least: 4.0.0
-Tested up to: 4.8.0
+Tested up to: 4.9.0
 Stable tag: 4.0.7
 
 The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
@@ -15,11 +15,10 @@ This is an all-in-one plugin for members of Triberr.com - the largest influencer
 ### Main Features:
 > * Sends your post immediately to Triberr without needing to crawl your RSS feed.
 > * Allows tribemates to view your post in their Tribal Stream thereby saving time and increasing the likelihood of them sharing your post.
-> * Displays Tribal Stream in the Wordpress Dashboard
 
 ### Useful Links:
 > * [How to Configure Triberr WordPress Plugin](http://help.triberr.com/how-to-configure-the-triberr-wordpress-plugin/)
-> * [Triberr Website](http://triberr.com)
+> * [Triberr Website](https://triberr.com)
 > * [Triberr Help Documentation](http://help.triberr.com)
 > * [Triberr Blog](http://blog.triberr.com)
 
@@ -31,7 +30,7 @@ Please `use` [Triberr Support](mailto:support@triberr.com?Subject=Triberr%20Word
 1. Upload the contents of triberr.zip to your plugins directory.
 2. Activate the plugin
 3. There will be a "Triberr" option in your Wordpress Settings menu.
-4. Login to Triberr.com and go to your Account Settings -> Blog Settings page (http://triberr.com/pages/settings.php?tab=blogs). Click on "Show Blog Token". Copy the 35 digit string of characters and numbers.
+4. Login to Triberr.com and go to your Account Settings -> Blog Settings page (https://triberr.com/pages/settings.php?tab=blogs). Click on "Show Blog Token". Copy the 35 digit string of characters and numbers.
 5. Paste the Blog Token you copied from your Triberr Blog Settings page and paste it in the plugins page within Wordpress Admin. Click Save.
 4. That's all. When you publish or update a post, it will automatically be sent to Triberr. You can pause or delete any unwanted posts by logging into Triberr and going to your Sent Stream.
 5. Use it and be happy!
@@ -48,13 +47,19 @@ Triberr will check to see if we already know about the post in our database. If 
 
 = Can I also import older posts into Triberr using this plugin?
 
-No, Triberr will only accept posts published within the last week.
+No, Triberr will only accept posts published within the last 2 weeks.
 
 == Screenshots ==
 
 1. Settings Page for API Token
 
 == Changelog ==
+
+= 4.0.8 = 2017-12-20
+* Made compatible with WordPress 4.9
+* UPDATED: Readme
+* UPDATED: Triberr logo, banner
+* REMOVED: Redundant code 
 
 = 4.0.7 = 2017-06-11
 * Made compatible with WordPress 4.8 
