@@ -4,7 +4,7 @@ Tags: triberr, triber, twitter, facebook, linkedin, remote publishing, blogging,
 promote old posts, Promote Posts, schedule, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
 Requires at least: 4.0.0
 Tested up to: 4.9.0
-Stable tag: 4.0.7
+Stable tag: 4.0.8
 
 The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
 
