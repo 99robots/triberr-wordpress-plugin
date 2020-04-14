@@ -2,19 +2,18 @@
 /**
  * Plugin Name: Triberr
  * Plugin URI: https://triberr.com/subdomains/plugins/wordpress/
- * Description: Instantly send posts from your blog from Triberr.
- * Version: 4.0.9
+ * Description: Instantly send posts from your blog to Triberr.
+ * Version: 4.1.0
  * Author: Triberr
  * Author URI: https://Triberr.com/
  * License: GPL2
  */
 
-$GLOBALS['version_number'] = '4.0.9';
+$GLOBALS['version_number'] = '4.1.0';
 require_once( 'triberr_includes/class-admin-functionality.php' );
 
 // Include calls for xml-rpc
 require_once( 'triberr_includes/class-api.php' );
-
 // Listen for RPC's
 add_action( 'publish_post', 'triberr_submit_post' );
 add_action( 'publish_future_post', 'triberr_submit_post' );
