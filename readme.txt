@@ -1,9 +1,10 @@
 === Triberr ===
-Contributors: Triberr, 99robots, charliepatel
+Contributors: Triberr, 99robots, charliepatel, DraftPress
 Tags: triberr, triber, tribes, twitter, facebook, linkedin, blogging, blogger, guest post, guest posting, syndication, influencer, influencer marketing, content marketing, content curation, curation, curate, rss, feed, best twitter plugin, best social plugin, best sharing plugin, social plugin, social media, share, sharing, buffer, facebook share, twitter share, linkedin share, post to twitter, post to facebook, post to linkedin, Promote Posts, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
 Requires at least: 4.0.0
 Tested up to: 5.4.0
 Stable tag: 4.1.1
+Donate link: https://draftpress.com
 
 The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
 
