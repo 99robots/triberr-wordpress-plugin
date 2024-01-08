@@ -66,33 +66,20 @@ function triberr_build_url($post_id) {
  */
 function triberr_connect($url, $fields) {
 
-    // set up our fields string variable
-    $fields_string = '';
+    // Make HTTP request using wp_remote_get().
+    $response = wp_remote_get($url, array(
+        'body'    => $fields,
+        'timeout' => 10,
+        'sslverify' => false, // Set to true if your server supports SSL.
+    ));
 
-    //url-ify the data for the POST
-    foreach ($fields as $key => $value) {
-	$fields_string .= $key . '=' . $value . '&';
+    // Check for errors.
+    if (is_wp_error($response)) {
+        return $response->get_error_message();
     }
 
-    rtrim($fields_string, '&');
-
-    //open connection
-    $ch = curl_init();
-
-    //set the url, number of POST vars, POST data
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_POST, count($fields));
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-
-    //execute post
-    $result = curl_exec($ch);
-
-    //close connection
-    curl_close($ch);
+    // Get the response body.
+    $result = wp_remote_retrieve_body($response);
 
     return $result;
 }
