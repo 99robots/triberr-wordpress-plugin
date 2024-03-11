@@ -1,9 +1,12 @@
 === Triberr ===
-Contributors: Triberr, 99robots, charliepatel
+Contributors: Triberr, 99robots, charliepatel, DraftPress
 Tags: triberr, triber, tribes, twitter, facebook, linkedin, blogging, blogger, guest post, guest posting, syndication, influencer, influencer marketing, content marketing, content curation, curation, curate, rss, feed, best twitter plugin, best social plugin, best sharing plugin, social plugin, social media, share, sharing, buffer, facebook share, twitter share, linkedin share, post to twitter, post to facebook, post to linkedin, Promote Posts, Share Old Posts, tweet old posts, reshare, reshare posts, Share Posts
-Requires at least: 4.0.0
-Tested up to: 5.4.0
-Stable tag: 4.1.1
+Requires at least: 4.9
+Requires PHP: 5.6.20
+Tested up to: 6.4.3
+Stable tag: 4.1.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Triberr plugin sends your WordPress posts to your Triberr stream automatically to encourage sharing by tribemates. Get your articles into the Tribal stream for maximum exposure. Extend your reach.
 
@@ -53,6 +56,9 @@ No, Triberr will only accept posts published within the last 2 weeks.
 1. Settings Page for API Token
 
 == Changelog ==
+= 4.1.2 = 2024-03-11
+* Compatibility update for WordPress 6.4.3
+* FIXED XSS vulnerability
 
 = 4.1.1 = 2020-07-17
 * FIXED: Fatal error on WordPress Dashboard
